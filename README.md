@@ -3,7 +3,7 @@ Simple cli demo of ascii effects on terminal from camera feed.
 
 
 ## Installation
-- |First clone the repository
+- First clone the repository
     ```
     git clone https://github.com/Acedev003/ascii-cam.git
     ```
@@ -15,7 +15,6 @@ Simple cli demo of ascii effects on terminal from camera feed.
     ```
     python src/ascii.py
     ```
-<Br>
 
 ## Command Line options
 
