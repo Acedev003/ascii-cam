@@ -1,6 +1,5 @@
 # ascii-cam
-Simple cli demo of ascii effects on terminal from camera feed.
-
+Simple cli application for ascii effects on terminal from camera feed. 
 
 ## Installation
 - First clone the repository
@@ -9,7 +8,7 @@ Simple cli demo of ascii effects on terminal from camera feed.
     ```
 - Install dependencies ( imageio[ffmpeg] , numpy , PIL )
     ```
-    //TODO
+    pip install -r requirements.txt
     ```
 - Run the program
     ```
@@ -24,10 +23,10 @@ Simple cli demo of ascii effects on terminal from camera feed.
     ```
 
 - By default the program uses the ascii density map 
-    > ( .:-=+*#%@)
+    >  .:-=+*#%@
 
     To use a longer ascii density string 
-    > ( ..''``^\",:;Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$) 
+    >  ..''``^\",:;Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$
     
     the following option can be used
     ```
