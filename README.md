@@ -23,9 +23,13 @@ Simple cli demo of ascii effects on terminal from camera feed.
     python src/ascii.py [-h or --help] 
     ```
 
-- By default the program uses the ascii density map ( .:-=+*#%@)
+- By default the program uses the ascii density map 
+    > ( .:-=+*#%@)
 
-    To use a longer ascii density string ( ..''``^\",:;Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$) the following option can be used
+    To use a longer ascii density string 
+    > ( ..''``^\",:;Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$) 
+    
+    the following option can be used
     ```
     python src/ascii.py [-l or --long] 
     ```
