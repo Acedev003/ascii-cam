@@ -1,12 +1,30 @@
 import curses
-import logging
+import argparse
 import imageio.v3 as iio
 import numpy as np
 
 from PIL import Image
 
 
-ascii_str     = " .'`^\",:;Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
+parser = argparse.ArgumentParser()
+parser.add_argument("-l","--long", help="Uses long ascii string instead of default for output",action="store_true")
+parser.add_argument("-d","--darkness", help="Sets the value for the darkness filter",default=0,type=int,choices=range(0, 51))
+args = parser.parse_args()
+
+ascii_str     = ""
+ascii_str_lng = " ..''``^\",:;Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
+ascii_str_def =  " .:-=+*#%@"
+
+if args.long:
+    ascii_str = ascii_str_lng
+else:
+    ascii_str = ascii_str_def
+
+
+
+darkness = args.darkness
+ascii_str = ''.join([' '*darkness]) + ascii_str
+
 ascii_str_len = len(ascii_str)
 
 def main(stdscr):
