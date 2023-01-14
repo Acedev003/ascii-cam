@@ -28,7 +28,7 @@ def main(stdscr):
         im = Image.fromarray(frame,mode="L")
         im = im.resize((cols,rows))
         
-        im = np.interp(np.array(im),[0,255],[0,ascii_str_len])
+        im = np.interp(np.array(im),[0,255],[0,ascii_str_len-1])
         im = np.rint(im).astype(np.uint8)
 
         for y in range(rows):
