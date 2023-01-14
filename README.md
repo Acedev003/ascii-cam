@@ -1,12 +1,14 @@
 # ascii-cam
 Simple cli application for ascii effects on terminal from camera feed. 
 
+![image](/misc/ascii-cam.png)
+
 ## Installation
 - First clone the repository
     ```
     git clone https://github.com/Acedev003/ascii-cam.git
     ```
-- Install dependencies ( imageio[ffmpeg] , numpy , PIL )
+- Install dependencies ( imageio[ffmpeg] )
     ```
     pip install -r requirements.txt
     ```
